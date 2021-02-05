@@ -204,10 +204,6 @@ body.ie .ibg img {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .fullscreen__title {
@@ -618,9 +614,6 @@ body.ie .ibg img {
   -o-transition: all 0.8s ease 0.1s;
   transition: all 0.8s ease 0.1s;
   opacity: 0;
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
 }
 
 .portfolio__columns._left {
@@ -642,21 +635,20 @@ body.ie .ibg img {
   opacity: 1;
 }
 
-.portfolio__columns:hover {
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
 .portfolio__content {
   -webkit-box-shadow: 0px 10px 40px rgba(126, 155, 189, 0.35);
           box-shadow: 0px 10px 40px rgba(126, 155, 189, 0.35);
+  -webkit-border-radius: 40px;
+          border-radius: 40px;
   padding: 20px;
 }
 
 .portfolio__image {
   display: block;
   margin: 0 0 10px 0;
+  -webkit-border-radius: 40px;
+          border-radius: 40px;
+  overflow: hidden;
 }
 
 .portfolio__image img {
@@ -664,6 +656,17 @@ body.ie .ibg img {
   height: 240px;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+.portfolio__image img:hover {
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .portfolio__label {
